@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search Navbar</title>
+    
+         <!-- Bootstrap CSS -->
+         <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+         <!-- Font Awesome CSS -->
+         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+     
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- custom css file link  -->
+       <link rel="stylesheet" href="./style/style.css">
+    
+    </head>
+    
+
+<header class="header bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a href="home.html" class="navbar-brand">Education</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<div class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    Student
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="home.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a class="dropdown-item" href="about.html"><i class="fas fa-question"></i> About</a></li>
+    <li><a class="dropdown-item" href="courses.html"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+    <li><a class="dropdown-item" href="teachers.html"><i class="fas fa-chalkboard-user"></i> Teachers</a></li>
+    <li><a class="dropdown-item" href="contact.html"><i class="fas fa-headset"></i> Contact Us</a></li>
+</ul>
+</div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <form action="search.html" method="post" class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" name="search_box" required placeholder="search courses..." maxlength="100">
+                    <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="menu-btn"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="search-btn"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="user-btn"><i class="fas fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="toggle-btn"><i class="fas fa-sun"></i></a>
+                    </li>
+                </ul>
+
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/pic-1.jpg" class="rounded-circle" alt="" style="width: 40px; height: 40px;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <li class="text-center">
+                            <img src="images/pic-1.jpg" class="rounded-circle mb-2" alt="" style="width: 80px; height: 80px;">
+                            <h3 class="name">Shaikh Anas</h3>
+                            <p class="role">Student</p>
+                        </li>
+                        <li><a class="dropdown-item" href="profile.html">View Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <div class="d-flex justify-content-around">
+                                <a href="login.html" class="btn btn-outline-primary">Login</a>
+                                <a href="register.html" class="btn btn-outline-secondary">Register</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>  
+<body>
+    <section class="teachers container py-5">
+
+        <h1 class="heading text-center mb-5">Expert Teachers</h1>
+     
+        <form action="" method="post" class="search-tutor d-flex justify-content-center mb-5">
+           <input type="text" name="search_box" class="form-control me-2" placeholder="Search tutors..." required maxlength="100">
+           <button type="submit" class="btn btn-primary" name="search_tutor"><i class="fas fa-search"></i></button>
+        </form>
+     
+        <div class="row">
+     
+           <div class="col-md-4 mb-4">
+              <div class="card h-100 text-center bg-light">
+                 <div class="card-body">
+                    <h3 class="card-title">Become a Tutor</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, itaque ipsam fuga ex et aliquam.</p>
+                    <a href="register.html" class="btn btn-primary">Get Started</a>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                 <img src="images/pic-2.jpg" class="card-img-top" alt="John Deo">
+                 <div class="card-body text-center">
+                    <h3 class="card-title">John Deo</h3>
+                    <span class="text-muted">Developer</span>
+                    <p class="mt-3">Total Playlists: <span>4</span></p>
+                    <p>Total Videos: <span>18</span></p>
+                    <p>Total Likes: <span>1208</span></p>
+                    <a href="teacher_profile.html" class="btn btn-primary">View Profile</a>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                 <img src="images/pic-3.jpg" class="card-img-top" alt="John Deo">
+                 <div class="card-body text-center">
+                    <h3 class="card-title">John Deo</h3>
+                    <span class="text-muted">Developer</span>
+                    <p class="mt-3">Total Playlists: <span>4</span></p>
+                    <p>Total Videos: <span>18</span></p>
+                    <p>Total Likes: <span>1208</span></p>
+                    <a href="teacher_profile.html" class="btn btn-primary">View Profile</a>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                 <img src="images/pic-4.jpg" class="card-img-top" alt="John Deo">
+                 <div class="card-body text-center">
+                    <h3 class="card-title">John Deo</h3>
+                    <span class="text-muted">Developer</span>
+                    <p class="mt-3">Total Playlists: <span>4</span></p>
+                    <p>Total Videos: <span>18</span></p>
+                    <p>Total Likes: <span>1208</span></p>
+                    <a href="teacher_profile.html" class="btn btn-primary">View Profile</a>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                 <img src="images/pic-5.jpg" class="card-img-top" alt="John Deo">
+                 <div class="card-body text-center">
+                    <h3 class="card-title">John Deo</h3>
+                    <span class="text-muted">Developer</span>
+                    <p class="mt-3">Total Playlists: <span>4</span></p>
+                    <p>Total Videos: <span>18</span></p>
+                    <p>Total Likes: <span>1208</span></p>
+                    <a href="teacher_profile.html" class="btn btn-primary">View Profile</a>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                 <img src="images/pic-6.jpg" class="card-img-top" alt="John Deo">
+                 <div class="card-body text-center">
+                    <h3 class="card-title">John Deo</h3>
+                    <span class="text-muted">Developer</span>
+                    <p class="mt-3">Total Playlists: <span>4</span></p>
+                    <p>Total Videos: <span>18</span></p>
+                    <p>Total Likes: <span>1208</span></p>
+                    <a href="teacher_profile.html" class="btn btn-primary">View Profile</a>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                 <img src="images/pic-7.jpg" class="card-img-top" alt="John Deo">
+                 <div class="card-body text-center">
+                    <h3 class="card-title">John Deo</h3>
+                    <span class="text-muted">Developer</span>
+                    <p class="mt-3">Total Playlists: <span>4</span></p>
+                    <p>Total Videos: <span>18</span></p>
+                    <p>Total Likes: <span>1208</span></p>
+                    <a href="teacher_profile.html" class="btn btn-primary">View Profile</a>
+                 </div>
+              </div>
+           </div>
+     
+           <div class="col-md-4 mb-4">
+              <div class="card h-100">
+                 <img src="images/pic-8.jpg" class="card-img-top" alt="John Deo">
+                 <div class="card-body text-center">
+                    <h3 class="card-title">John Deo</h3>
+                    <span class="text-muted">Developer</span>
+                    <p class="mt-3">Total Playlists: <span>4</span></p>
+                    <p>Total Videos: <span>18</span></p>
+                    <p>Total Likes: <span>1208</span></p>
+                    <a href="teacher_profile.html" class="btn btn-primary">View Profile</a>
+                 </div>
+              </div>
+           </div>
+     
+        </div>
+     
+     </section>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+        
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>

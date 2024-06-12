@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Bootstrap CSS -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- Font Awesome CSS -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+ 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- custom css file link  -->
+   <link rel="stylesheet" href="./style/style.css">
+</head>
+<header class="header bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a href="home.html" class="navbar-brand">Education</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<div class="dropdown">
+<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+    Student
+</button>
+<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <li><a class="dropdown-item" href="home.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a class="dropdown-item" href="about.html"><i class="fas fa-question"></i> About</a></li>
+    <li><a class="dropdown-item" href="courses.html"><i class="fas fa-graduation-cap"></i> Courses</a></li>
+    <li><a class="dropdown-item" href="teachers.html"><i class="fas fa-chalkboard-user"></i> Teachers</a></li>
+    <li><a class="dropdown-item" href="contact.html"><i class="fas fa-headset"></i> Contact Us</a></li>
+</ul>
+</div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <form action="search.html" method="post" class="d-flex ms-auto">
+                    <input class="form-control me-2" type="search" name="search_box" required placeholder="search courses..." maxlength="100">
+                    <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="menu-btn"><i class="fas fa-bars"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="search-btn"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="user-btn"><i class="fas fa-user"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="toggle-btn"><i class="fas fa-sun"></i></a>
+                    </li>
+                </ul>
+
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="images/pic-1.jpg" class="rounded-circle" alt="" style="width: 40px; height: 40px;">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <li class="text-center">
+                            <img src="images/pic-1.jpg" class="rounded-circle mb-2" alt="" style="width: 80px; height: 80px;">
+                            <h3 class="name">Shaikh Anas</h3>
+                            <p class="role">Student</p>
+                        </li>
+                        <li><a class="dropdown-item" href="profile.html">View Profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <div class="d-flex justify-content-around">
+                                <a href="login.html" class="btn btn-outline-primary">Login</a>
+                                <a href="register.html" class="btn btn-outline-secondary">Register</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>    
+
+<body>
+    <section class="home-grid py-5">
+        <div class="container">
+           <h1 class="heading text-center mb-4">Quick Options</h1>
+           <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                 <div class="card h-100">
+                    <div class="card-body">
+                       <h3 class="card-title">Likes and Comments</h3>
+                       <p class="card-text">Total likes: <span>25</span></p>
+                       <a href="#" class="btn btn-primary mb-2">View likes</a>
+                       <p class="card-text">Total comments: <span>12</span></p>
+                       <a href="#" class="btn btn-primary mb-2">View comments</a>
+                       <p class="card-text">Saved playlists: <span>4</span></p>
+                       <a href="#" class="btn btn-primary">View playlists</a>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                 <div class="card h-100">
+                    <div class="card-body">
+                       <h3 class="card-title">Top Categories</h3>
+                       <div class="d-flex flex-wrap">
+                          <a href="#" class="d-block me-3 mb-2"><i class="fas fa-code"></i> Development</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fas fa-chart-simple"></i> Business</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fas fa-pen"></i> Design</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fas fa-chart-line"></i> Marketing</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fas fa-music"></i> Music</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fas fa-camera"></i> Photography</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fas fa-cog"></i> Software</a>
+                          <a href="#" class="d-block"><i class="fas fa-vial"></i> Science</a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                 <div class="card h-100">
+                    <div class="card-body">
+                       <h3 class="card-title">Popular Topics</h3>
+                       <div class="d-flex flex-wrap">
+                          <a href="#" class="d-block me-3 mb-2"><i class="fab fa-html5"></i> HTML</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fab fa-css3"></i> CSS</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fab fa-js"></i> JavaScript</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fab fa-react"></i> React</a>
+                          <a href="#" class="d-block me-3 mb-2"><i class="fab fa-php"></i> PHP</a>
+                          <a href="#" class="d-block"><i class="fab fa-bootstrap"></i> Bootstrap</a>
+                       </div>
+                    </div>
+                 </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                 <div class="card h-100">
+                    <div class="card-body">
+                       <h3 class="card-title">Become a Tutor</h3>
+                       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, nam?</p>
+                       <a href="teachers.html" class="btn btn-primary">Get started</a>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <section class="courses py-5 bg-light">
+        <div class="container">
+            <h1 class="heading text-center mb-5">Our Courses</h1>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-2.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-1.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete HTML Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-3.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-2.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete CSS Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-4.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-3.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete JS Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-5.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-4.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete Bootstrap Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-6.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-5.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete JQuery Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-7.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-6.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete SASS Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-8.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-7.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete PHP Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-9.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-8.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete MySQL Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="images/pic-1.jpg" alt="" class="rounded-circle me-2" style="width: 50px; height: 50px;">
+                                <div>
+                                    <h5 class="card-title mb-0">john deo</h5>
+                                    <small class="text-muted">21-10-2022</small>
+                                </div>
+                            </div>
+                            <img src="images/thumb-9.png" alt="" class="img-fluid mb-3">
+                            <h5 class="card-title">Complete React Tutorial</h5>
+                            <p class="card-text">10 videos</p>
+                            <a href="playlist.html" class="btn btn-primary">View Playlist</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+   <!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>

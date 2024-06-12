@@ -1,0 +1,56 @@
+  /* Custom CSS to resize the search input field */
+  .form-control {
+    width: 300px; /* Adjust the width as needed */
+}
+
+/* Custom CSS to resize the search button */
+.btn {
+    min-width: 100px; /* Adjust the width as needed */
+}
+
+.sidebar {
+    margin-top: 150px; /* Adjust this value as needed */
+}
+.side-bar {
+    width: 140px;
+    background: #f8f9fa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    z-index: 1000;
+}
+.side-bar .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.side-bar .profile .image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.side-bar .navbar {
+    width: 100%;
+}
+.side-bar .navbar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.side-bar .navbar a:hover {
+    background: #e9ecef;
+}
+.side-bar .navbar i {
+    margin-right: 10px;
+}
